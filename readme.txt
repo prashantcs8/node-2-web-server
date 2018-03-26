@@ -120,7 +120,10 @@ copy public key paste here
 connect github.com (test)
 ssh -T git@github.com
 
+create new repository on github
 
+git remote add origin git@github.com:prashantcs8/node-2-web-server.git
+git push -u origin master
 
 
 
