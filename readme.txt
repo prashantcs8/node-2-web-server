@@ -91,20 +91,6 @@ app.use((req, res, next) => {
 	res.render('maintenance.hbs');
 });
 
----adding version control (Git)---
-git --version
-
-on project folder
-git init
-
-git status
-
-git add public/
-git add views/
-git add server.js
-git add package.json
-git add readme.txt
-
 
 
 -------generating ssh key (git bash)----
@@ -134,63 +120,10 @@ copy public key paste here
 connect github.com (test)
 ssh -T git@github.com
 
-
-create new repository
+create new repository on github
 
 git remote add origin git@github.com:prashantcs8/node-2-web-server.git
 git push -u origin master
-
-
-------------Deploying your app--------------
-heroku
-heroku is a website (web app) for managing web application that are hosted in cloud
-https://www.heroku.com/
-
---check heroku
-heroku --help
-
---enter email and password for heroku account
-heroku login
-
---adds public file
-heroku keys:add
-
---shows available key on heroku
-heroku keys
-
---test our connection using ssh
-ssh -v git@heroku.com
-
-
---dynamic port in application
-const port = process.env.PORT || 3000;
-
-app.listen(port, () => {
-	console.log(`Server is up on port ${port}`);
-});
-
---now add in package.json under script object its like command we run terminal
-"start": "node server.js"
-
-
---go to terminal start npm starts our app now its ready for heroku
-npm start 
-
--- add modified files
-git add .
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
