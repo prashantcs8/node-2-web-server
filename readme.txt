@@ -176,7 +176,8 @@ app.listen(port, () => {
 --go to terminal start npm starts our app now its ready for heroku
 npm start 
 
-
+-- add modified files
+git add .
 
 
 
