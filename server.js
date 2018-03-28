@@ -62,6 +62,15 @@ app.get('/about', (req, res) =>{
 		currentYear: new Date().getFullYear()
 	});
 });
+app.get('/projects', (req, res) =>{
+	// res.send('<h1>Hello express</h1>');
+	// res.send('About Page');
+	res.render('projects.hbs', {
+		pageTitle: 'Portfolio',
+		// currentYear: new Date().getFullYear()
+	});
+});
+
 
 // bad - send back json with errorMessage
 

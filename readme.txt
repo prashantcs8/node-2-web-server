@@ -183,7 +183,14 @@ git status
 
 git commit -m "setup start script and heroku port"
 
+--creats new web application in
 
+heroku
+heroku create
+
+git push heroku
+
+heroku open
 
 
 
